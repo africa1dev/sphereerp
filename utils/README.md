@@ -5,15 +5,15 @@ Helper classes and functions to speed up coding of custom functions when develop
 These functions are automatically imported into the codespace of custom code and only need to be called.
 
 ## 1. Pre-defined constants
-request - All the request data including $_POST, $_GET AND php://input
-dbUser - Primary Sphere ERP instance database user
-dbPassword - Primary Sphere ERP instance database password
-dbHost - Primary Sphere ERP instance database host address
-dbSchema - Primary Sphere ERP instance database name
-session - Current session data including the authenticated user name
-user_config - Current authenticated user configuration including permissions
-ipaddress - Request origin ip address
-datestamp - Current date and time as per the organization's configured timezone
+..* request - All the request data including $_POST, $_GET AND php://input
+..* dbUser - Primary Sphere ERP instance database user
+..* dbPassword - Primary Sphere ERP instance database password
+..* dbHost - Primary Sphere ERP instance database host address
+..* dbSchema - Primary Sphere ERP instance database name
+..* session - Current session data including the authenticated user name
+..* user_config - Current authenticated user configuration including permissions
+..* ipaddress - Request origin ip address
+..* datestamp - Current date and time as per the organization's configured timezone
 
 ## 2. Debugging
 Include a 'sphere_function_debug' in a request (GET|POST) to print out raw PHP errors
