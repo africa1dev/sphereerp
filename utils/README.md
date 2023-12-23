@@ -45,3 +45,9 @@ Third parameter can be any PDO return constant as below:
 PDO::FETCH_NUM, PDO::FETCH_BOTH, PDO::FETCH_OBJ, PDO::FETCH_LAZY, PDO::FETCH_ASSOC, PDO::FETCH_COLUMN, PDO::FETCH_KEY_PAIR, PDO::FETCH_UNIQUE, PDO::FETCH_GROUP
 ```
 Information on these PDO constants is available on the [PHP documentation](https://www.php.net/manual/en/pdostatement.fetch.php)
+
+Returns an array in the form:
+```php
+['result'=><an array OR string with the result OR false>,,'error'=><error message from the execution or false>]
+```
+
