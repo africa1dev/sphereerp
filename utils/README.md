@@ -4,7 +4,21 @@ Helper classes and functions to speed up coding of custom functions when develop
 
 These functions are automatically imported into the codespace of custom code and only need to be called.
 
-## 1. Database connection (db)
+## 1. Pre-defined constants
+request - All the request data including $_POST, $_GET AND php://input
+dbUser - Primary Sphere ERP instance database user
+dbPassword - Primary Sphere ERP instance database password
+dbHost - Primary Sphere ERP instance database host address
+dbSchema - Primary Sphere ERP instance database name
+session - Current session data including the authenticated user name
+user_config - Current authenticated user configuration including permissions
+ipaddress - Request origin ip address
+datestamp - Current date and time as per the organization's configured timezone
+
+## 2. Debugging
+Include a 'sphere_function_debug' in a request (GET|POST) to print out raw PHP errors
+
+## 3. Database connection (db)
 Connect to your instance of the Sphere ERP database from custom code. The primary database is a MariaDB instance. 
 This class can also be used to connect to any other MariaDB/Mysql databases.
 
@@ -23,7 +37,7 @@ $db=new sphereerp\utils\db(string <username>,string <password>,string <host>,str
 #### Database connection status
 The status of a database connection can be obtained from the handle property of the object returned by calling the sphereerp\utils\db class which has the keys:
 ```php
-['conn'=><a PDO connection object>,'connected'=><true OR false>,'message'=><error message from connection attempt>]
+['conn'=><a PDO connection object>,'connected'=><true|false>,'message'=><error message from connection attempt>]
 ```
 #### Run a query on connected database
 ```php
@@ -31,7 +45,7 @@ $db-run(string <parametized query string>,array <query parameters>,string option
 ```
 Returns an array in the form:
 ```php
-['result'=><a PDO statement object OR false>,'row_count'=><number of affected/returned rows OR false>,'error'=><error message from the query or false>]
+['result'=><a PDO statement object|false>,'row_count'=><number of affected/returned rows|false>,'error'=><error message from the query or false>]
 ```
 #### Extract results from query
 ```php
@@ -48,6 +62,6 @@ Information on these PDO constants is available on the [PHP documentation](https
 
 Returns an array in the form:
 ```php
-['result'=><an array OR string with the result OR false>,'error'=><error message from the execution or false>]
+['result'=><an array|string with the result|false>,'error'=><error message from the execution|false>]
 ```
 
