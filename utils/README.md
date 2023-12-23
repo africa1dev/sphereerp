@@ -2,6 +2,8 @@
 
 Helper classes and functions to speed up coding of custom functions when developing with [Sphere ERP](https://www.sphereerp.com)
 
+These functions are automatically imported into the codespace of custom code and only need to be called.
+
 ## 1. Database connection (db)
 Connect to your instance of the Sphere ERP database from custom code. The primary database is a MariaDB instance. 
 This class can also be used to connect to any other MariaDB/Mysql databases.
