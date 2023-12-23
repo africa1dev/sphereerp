@@ -1,2 +1,2 @@
 # sphereerp
-Low code development project
+Low code APIs and database development project
