@@ -31,3 +31,15 @@ Returns an array in the form:
 ```php
 ['result'=><a PDO statement object OR false>,'row_count'=><number of affected/returned rows OR false>,'error'=><error message from the query or false>]
 ```
+#### Extract results from query
+```php
+$db->fetch($db-run(...)['result'],string <what to return>,<type to return>)
+```
+Second parameter can be:
+1=Return only one row as an array, 'col' return only one column as a string, 'all' return all rows as an array
+
+Third parameter can be any PDO return constant as below:
+```php
+PDO::FETCH_NUM, PDO::FETCH_BOTH, PDO::FETCH_OBJ, PDO::FETCH_LAZY, PDO::FETCH_ASSOC, PDO::FETCH_COLUMN, PDO::FETCH_KEY_PAIR, PDO::FETCH_UNIQUE, PDO::FETCH_GROUP
+```
+Information on these PDO constants is available on the [PHP documentation](https://www.php.net/manual/en/pdostatement.fetch.php)
