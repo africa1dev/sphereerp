@@ -64,4 +64,8 @@ Returns an array in the form:
 ```php
 ['result'=><an array|string with the result|false>,'error'=><error message from the execution|false>]
 ```
-
+## 4. Logging
+Write a log to the system logs
+```php
+sphereerp\utils\actions::log(string <label>,string <log information>);
+```
