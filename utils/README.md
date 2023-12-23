@@ -48,6 +48,6 @@ Information on these PDO constants is available on the [PHP documentation](https
 
 Returns an array in the form:
 ```php
-['result'=><an array OR string with the result OR false>,,'error'=><error message from the execution or false>]
+['result'=><an array OR string with the result OR false>,'error'=><error message from the execution or false>]
 ```
 
