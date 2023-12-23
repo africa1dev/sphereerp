@@ -16,3 +16,11 @@ ii: Connect to other database
 ```php
 $db=new sphereerp\utils\db(string <username>,string <password>,string <host>,string <character set>,string <database>);
 ```
+iii: Run a query on connected database
+```php
+$db-run(string <parametized query string>,array <query parameters>,string optional <database to use>);
+```
+Returns an array in the form:
+```php
+['result'=><a PDO statement object OR false>,'row_count'=><number of affected/returned rows OR false>,'error'=><error message from the query or false>]
+```
