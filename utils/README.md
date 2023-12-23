@@ -14,5 +14,5 @@ $db=new sphereerp\utils\db();
 
 ii: Connect to other database
 ```php
-$db=new sphereerp\utils\db('username','password','host','character set', database);
+$db=new sphereerp\utils\db(string <username>,string <password>,string <host>,string <character set>,string <database>);
 ```
