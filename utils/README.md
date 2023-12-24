@@ -22,8 +22,6 @@ Include a 'sphere_function_debug' in a request (GET|POST) to print out raw PHP e
 Connect to your instance of the Sphere ERP database from custom code. The primary database is a MariaDB instance. 
 This class can also be used to connect to any other MariaDB/Mysql databases.
 
-### Usage
-
 #### Connect to primary database
 ```php
 $db=new sphereerp\utils\db();
