@@ -5,6 +5,7 @@ Helper classes and functions to speed up coding of custom functions when develop
 These functions are automatically imported into the codespace of custom code and only need to be called.
 
 ## 1. Pre-defined constants
+* response - an empty array that can be used to hold a response JSON object
 * request - All the request data including $_POST, $_GET AND php://input
 * dbUser - Primary Sphere ERP instance database user
 * dbPassword - Primary Sphere ERP instance database password
