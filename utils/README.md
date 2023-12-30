@@ -12,9 +12,10 @@ These functions are automatically imported into the codespace of custom code and
 * dbHost - Primary Sphere ERP instance database host address
 * dbSchema - Primary Sphere ERP instance database name
 * session - Current session data including the authenticated user name
-* user_config - Current authenticated user configuration including permissions
+* userConfig - Current authenticated user configuration including permissions
 * ipaddress - Request origin ip address
 * datestamp - Current date and time as per the organization's configured timezone
+* serverUrl - base URL for the server (used in API calls from your custom code)
 
 ## 2. Debugging
 Include a 'sphere_function_debug' in a request (GET|POST) to print out raw PHP errors
